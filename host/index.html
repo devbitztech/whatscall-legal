@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Account Deletion Request — WhatsCall</title>
+<title>Privacy Policy — WhatsCall Host</title>
 <style>
   :root {
     --text: #1f2328;
@@ -22,118 +22,64 @@
     line-height: 1.6;
   }
   .container {
-    max-width: 640px;
+    max-width: 820px;
     margin: 0 auto;
     background: var(--bg);
     padding: 40px 48px 64px;
     box-shadow: 0 0 0 1px var(--border);
   }
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin-bottom: 4px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 16px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 12px;
   }
   .intro {
     margin-top: 20px;
     font-size: 1.02rem;
   }
-  .notice {
-    margin-top: 16px;
-    padding: 14px 18px;
-    background: #fff8e6;
-    border: 1px solid #f0d98c;
-    border-radius: 6px;
-    font-size: 0.92rem;
-    color: #6b5300;
-  }
-  form {
-    margin-top: 2em;
-  }
-  fieldset {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 20px 24px 24px;
-    margin-bottom: 20px;
-  }
-  legend {
-    padding: 0 8px;
-    font-weight: 600;
+  .dev-info {
+    margin-top: 12px;
     font-size: 0.95rem;
-  }
-  label {
-    display: block;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-top: 14px;
-    margin-bottom: 6px;
-  }
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 10px 12px;
-    font-size: 0.95rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-family: inherit;
-  }
-  textarea {
-    resize: vertical;
-    min-height: 90px;
-  }
-  .radio-row {
-    display: flex;
-    gap: 24px;
-    margin-top: 8px;
-    font-weight: normal;
-    font-size: 0.92rem;
-  }
-  .radio-row label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: normal;
-    margin-top: 0;
-  }
-  .field-group {
-    display: none;
-  }
-  .field-group.active {
-    display: block;
-  }
-  .hint {
     color: var(--muted);
-    font-size: 0.82rem;
-    margin-top: 4px;
   }
-  button {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  button:hover {
-    background: #0757ba;
-  }
-  .what-happens {
-    margin-top: 2.5em;
-  }
-  .what-happens h2 {
-    font-size: 1.15rem;
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2.4em;
     margin-bottom: 0.6em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
   }
-  .what-happens ul {
-    padding-left: 1.3em;
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1.6em;
+    margin-bottom: 0.4em;
   }
-  .what-happens li {
-    margin: 0.4em 0;
+  p { margin: 0.8em 0; }
+  ul {
+    margin: 0.6em 0;
+    padding-left: 1.4em;
   }
+  li { margin: 0.35em 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+  .contact-block {
+    margin-top: 0.8em;
+    padding: 16px 20px;
+    background: #f6f8fa;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  .contact-block p { margin: 0.3em 0; }
   footer {
     margin-top: 3em;
     padding-top: 1.2em;
@@ -142,118 +88,112 @@
     font-size: 0.85rem;
     text-align: center;
   }
-  a { color: var(--accent); }
   @media (max-width: 600px) {
     .container { padding: 28px 20px 48px; }
-    h1 { font-size: 1.4rem; }
-    fieldset { padding: 16px 16px 20px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.15rem; }
   }
 </style>
 </head>
 <body>
 <div class="container">
 
-  <h1>Account Deletion Request</h1>
+  <h1>Privacy Policy — WhatsCall Host</h1>
+  <p class="updated"><strong>Last updated:</strong> August 28, 2026</p>
 
-  <p class="intro">Use this form to request deletion of your WhatsCall account and associated data. Submitting this form will open your email app with a pre-filled request to our support team.</p>
+  <p class="intro">This Privacy Policy describes how WhatsCall Host ("the App", "we", "us") collects, uses, and discloses information when you use the WhatsCall Host mobile application as a host or agency partner.</p>
 
-  <div class="notice">
-    Deleting your account is permanent. Once processed, your profile, chat history, call records, and wallet balance will be removed and cannot be recovered, except where we are required to retain certain records for legal or accounting purposes.
-  </div>
+  <p class="dev-info">
+    Contact: <a href="mailto:dev.bitztech@gmail.com">dev.bitztech@gmail.com</a>
+  </p>
 
-  <form id="deleteForm">
-    <fieldset>
-      <legend>How should we identify your account?</legend>
+  <h2>1. Information We Collect</h2>
 
-      <div class="radio-row">
-        <label><input type="radio" name="method" value="email" checked> Email address</label>
-        <label><input type="radio" name="method" value="phone"> Phone number</label>
-      </div>
+  <h3>1.1 Account &amp; Profile Information</h3>
+  <ul>
+    <li>Phone number and/or email address, verified via one-time password (OTP)</li>
+    <li>First name, last name, and host display name</li>
+    <li>Profile photos and album media (selected from your device camera or gallery)</li>
+    <li>Host details such as bio, age verification status, and language preferences</li>
+    <li>Agency referral or code (if registered under an agency)</li>
+    <li>Device ID (used for authentication and account/device association)</li>
+  </ul>
 
-      <div class="field-group active" id="emailGroup">
-        <label for="emailInput">Email address</label>
-        <input type="email" id="emailInput" name="emailInput" placeholder="you@example.com">
-      </div>
+  <h3>1.2 Audio/Video Call and Chat Data</h3>
+  <ul>
+    <li>Content of text messages sent between you and users within the App, stored to enable conversation history</li>
+    <li>Call metadata: call type (audio/video), call status, connect/end timestamps, call duration, and rate/coin calculations</li>
+    <li>We do not record or store the audio or video content of your live calls</li>
+  </ul>
 
-      <div class="field-group" id="phoneGroup">
-        <label for="phoneInput">Phone number</label>
-        <input type="tel" id="phoneInput" name="phoneInput" placeholder="+91 98765 43210">
-      </div>
-    </fieldset>
+  <h3>1.3 Financial and Payout Information</h3>
+  <ul>
+    <li>Coin balance, earnings history, and settlement records within the App</li>
+    <li>Payout credentials (such as UPI ID or bank account details provided for receiving earnings withdrawals)</li>
+    <li>Transaction history (amount, withdrawal request ID, status) retained for accounting, fraud prevention, and legal compliance</li>
+  </ul>
 
-    <fieldset>
-      <legend>Additional details (optional)</legend>
-      <label for="reason">Reason for deletion / anything we should know</label>
-      <textarea id="reason" name="reason" placeholder="Optional"></textarea>
-      <p class="hint">This helps us process your request faster but is not required.</p>
-    </fieldset>
+  <h3>1.4 Permissions</h3>
+  <ul>
+    <li><strong>Camera:</strong> used for live video calls with users and for taking profile or album photos</li>
+    <li><strong>Microphone:</strong> used to enable audio transmission during voice and video calls</li>
+    <li><strong>Photos/Media/Gallery:</strong> used to select and upload images for your host profile or album</li>
+    <li><strong>Notifications:</strong> used to notify you of incoming calls, user messages, and payout updates</li>
+  </ul>
 
-    <button type="submit">Request Account Deletion</button>
-  </form>
+  <h3>1.5 Device and Technical Information</h3>
+  <ul>
+    <li>Android device identifier, device model, operating system version, and network parameters</li>
+    <li>Data stored locally on your device for performance caching and app state persistence</li>
+  </ul>
 
-  <div class="what-happens">
-    <h2>What happens next</h2>
-    <ul>
-      <li>Your request is sent to our support team at <a href="mailto:dev.bitztech@gmail.com">dev.bitztech@gmail.com</a>.</li>
-      <li>We may contact you to verify your identity before processing the deletion.</li>
-      <li>Your account and associated data are typically removed within 30 days, unless retention is required for legal or accounting obligations.</li>
-      <li>You can also send a deletion request directly by emailing us with the email or phone number linked to your account.</li>
-    </ul>
+  <h2>2. How We Use Your Information</h2>
+  <p>We use the information we collect to:</p>
+  <ul>
+    <li>Create, verify, and manage your host account</li>
+    <li>Enable real-time voice/video calls and chat interactions with users on the platform</li>
+    <li>Track host activity, calculate coin earnings, and process payout withdrawals</li>
+    <li>Verify age and host compliance with community guidelines</li>
+    <li>Provide technical support and customer care</li>
+    <li>Protect platform integrity, prevent fraudulent activities, and enforce our terms</li>
+  </ul>
+
+  <h2>3. How We Share Your Information</h2>
+  <ul>
+    <li><strong>App Users:</strong> Your host profile information (display name, profile photo, bio, call rates, online status) is visible to users searching for or interacting with hosts on the platform</li>
+    <li><strong>Agency Partners:</strong> If registered under an agency, aggregated earnings and activity summaries may be shared with your designated agency manager</li>
+    <li><strong>Payout Processors:</strong> Banking details necessary to complete payout disbursements are shared securely with authorized financial/payout service providers</li>
+    <li><strong>Legal &amp; Regulatory Authorities:</strong> When required to comply with legal obligations, court orders, or law enforcement requests</li>
+    <li>We do not sell your personal information to third parties</li>
+  </ul>
+
+  <h2>4. Data Security</h2>
+  <p>We employ industry-standard technical, administrative, and physical security measures to protect host personal and financial information. However, no internet transmission or electronic storage is completely secure, so hosts should safeguard their login credentials and OTP codes.</p>
+
+  <h2>5. Host Rights &amp; Preferences</h2>
+  <p>As a host, you have the right to:</p>
+  <ul>
+    <li><strong>Access &amp; Update Profile:</strong> Edit your public host profile, photo, and details within the App</li>
+    <li><strong>Account Deletion:</strong> Request deletion of your account and associated data by contacting support</li>
+  </ul>
+
+  <h2>6. Data Retention Policy</h2>
+  <p>We retain your account, call, and earnings data for as long as your host account remains active. If your account is closed or deleted, personal profile data is deleted within 30 days, except for transaction and payout logs retained to meet legal, tax, or accounting requirements.</p>
+
+  <h2>7. Child Safety &amp; Age Restriction</h2>
+  <p>WhatsCall Host is strictly restricted to individuals who are 18 years of age or older. We maintain a zero-tolerance policy for child sexual exploitation material (CSEM), abuse, or the inclusion of minors in any host content or broadcasts. Violators will face immediate account termination and reporting to relevant authorities (such as NCMEC or law enforcement).</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy periodically. Continued use of the WhatsCall Host app after updates take effect signifies your acceptance of the updated terms.</p>
+
+  <h2>9. Contact Us</h2>
+  <p>If you have any questions or concerns regarding this Privacy Policy, contact us at:</p>
+  <div class="contact-block">
+    <p>Email: <a href="mailto:dev.bitztech@gmail.com">dev.bitztech@gmail.com</a></p>
   </div>
 
   <footer>&copy; 2026 WhatsCall. All rights reserved.</footer>
 
 </div>
-
-<script>
-  const methodRadios = document.querySelectorAll('input[name="method"]');
-  const emailGroup = document.getElementById('emailGroup');
-  const phoneGroup = document.getElementById('phoneGroup');
-  const emailInput = document.getElementById('emailInput');
-  const phoneInput = document.getElementById('phoneInput');
-
-  function updateFields() {
-    const method = document.querySelector('input[name="method"]:checked').value;
-    if (method === 'email') {
-      emailGroup.classList.add('active');
-      phoneGroup.classList.remove('active');
-    } else {
-      phoneGroup.classList.add('active');
-      emailGroup.classList.remove('active');
-    }
-  }
-
-  methodRadios.forEach(r => r.addEventListener('change', updateFields));
-
-  document.getElementById('deleteForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const method = document.querySelector('input[name="method"]:checked').value;
-    const identifier = method === 'email' ? emailInput.value.trim() : phoneInput.value.trim();
-    const reason = document.getElementById('reason').value.trim();
-
-    if (!identifier) {
-      alert('Please enter your ' + (method === 'email' ? 'email address' : 'phone number') + '.');
-      return;
-    }
-
-    const subject = 'Account Deletion Request - WhatsCall';
-    const bodyLines = [
-      'I would like to request deletion of my WhatsCall account.',
-      '',
-      (method === 'email' ? 'Email' : 'Phone number') + ': ' + identifier,
-    ];
-    if (reason) {
-      bodyLines.push('', 'Additional details:', reason);
-    }
-
-    const mailto = 'mailto:dev.bitztech@gmail.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(bodyLines.join('\n'));
-
-    window.location.href = mailto;
-  });
-</script>
-
 </body>
 </html>

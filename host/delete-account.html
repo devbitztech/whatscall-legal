@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deletion Request — WhatsCall Host</title>
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #57606a;
+    --border: #d8dee4;
+    --bg: #ffffff;
+    --accent: #0969da;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f8fa;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 40px 48px 64px;
+    box-shadow: 0 0 0 1px var(--border);
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+  }
+  .intro {
+    margin-top: 20px;
+    font-size: 1.02rem;
+  }
+  .notice {
+    margin-top: 16px;
+    padding: 14px 18px;
+    background: #fff8e6;
+    border: 1px solid #f0d98c;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    color: #6b5300;
+  }
+  form {
+    margin-top: 2em;
+  }
+  fieldset {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px 24px;
+    margin-bottom: 20px;
+  }
+  legend {
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  .radio-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 0.92rem;
+  }
+  .radio-row label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin-top: 0;
+  }
+  .field-group {
+    display: none;
+  }
+  .field-group.active {
+    display: block;
+  }
+  .hint {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-top: 4px;
+  }
+  button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0757ba;
+  }
+  .what-happens {
+    margin-top: 2.5em;
+  }
+  .what-happens h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6em;
+  }
+  .what-happens ul {
+    padding-left: 1.3em;
+  }
+  .what-happens li {
+    margin: 0.4em 0;
+  }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.2em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  a { color: var(--accent); }
+  @media (max-width: 600px) {
+    .container { padding: 28px 20px 48px; }
+    h1 { font-size: 1.4rem; }
+    fieldset { padding: 16px 16px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Account Deletion Request — WhatsCall Host</h1>
+
+  <p class="intro">Use this form to request deletion of your WhatsCall Host account and associated data. Submitting this form will open your email app with a pre-filled request to our support team.</p>
+
+  <div class="notice">
+    Deleting your host account is permanent. Once processed, your host profile, chat history, call records, and earnings balance will be removed and cannot be recovered, except where we are required to retain financial or settlement records for legal or accounting purposes.
+  </div>
+
+  <form id="deleteForm">
+    <fieldset>
+      <legend>How should we identify your host account?</legend>
+
+      <div class="radio-row">
+        <label><input type="radio" name="method" value="email" checked> Email address</label>
+        <label><input type="radio" name="method" value="phone"> Phone number</label>
+      </div>
+
+      <div class="field-group active" id="emailGroup">
+        <label for="emailInput">Email address</label>
+        <input type="email" id="emailInput" name="emailInput" placeholder="you@example.com">
+      </div>
+
+      <div class="field-group" id="phoneGroup">
+        <label for="phoneInput">Phone number</label>
+        <input type="tel" id="phoneInput" name="phoneInput" placeholder="+91 98765 43210">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional details (optional)</legend>
+      <label for="reason">Reason for deletion / anything we should know</label>
+      <textarea id="reason" name="reason" placeholder="Optional"></textarea>
+      <p class="hint">This helps us process your request faster but is not required.</p>
+    </fieldset>
+
+    <button type="submit">Request Account Deletion</button>
+  </form>
+
+  <div class="what-happens">
+    <h2>What happens next</h2>
+    <ul>
+      <li>Your request is sent to our support team at <a href="mailto:dev.bitztech@gmail.com">dev.bitztech@gmail.com</a>.</li>
+      <li>We may contact you to verify your identity before processing the deletion.</li>
+      <li>Your account and associated data are typically removed within 30 days, unless retention is required for legal or accounting obligations.</li>
+      <li>You can also send a deletion request directly by emailing us with the email or phone number linked to your account.</li>
+    </ul>
+  </div>
+
+  <footer>&copy; 2026 WhatsCall. All rights reserved.</footer>
+
+</div>
+
+<script>
+  const methodRadios = document.querySelectorAll('input[name="method"]');
+  const emailGroup = document.getElementById('emailGroup');
+  const phoneGroup = document.getElementById('phoneGroup');
+  const emailInput = document.getElementById('emailInput');
+  const phoneInput = document.getElementById('phoneInput');
+
+  function updateFields() {
+    const method = document.querySelector('input[name="method"]:checked').value;
+    if (method === 'email') {
+      emailGroup.classList.add('active');
+      phoneGroup.classList.remove('active');
+    } else {
+      phoneGroup.classList.add('active');
+      emailGroup.classList.remove('active');
+    }
+  }
+
+  methodRadios.forEach(r => r.addEventListener('change', updateFields));
+
+  document.getElementById('deleteForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const method = document.querySelector('input[name="method"]:checked').value;
+    const identifier = method === 'email' ? emailInput.value.trim() : phoneInput.value.trim();
+    const reason = document.getElementById('reason').value.trim();
+
+    if (!identifier) {
+      alert('Please enter your ' + (method === 'email' ? 'email address' : 'phone number') + '.');
+      return;
+    }
+
+    const subject = 'Host Account Deletion Request - WhatsCall Host';
+    const bodyLines = [
+      'I would like to request deletion of my WhatsCall Host account.',
+      '',
+      (method === 'email' ? 'Email' : 'Phone number') + ': ' + identifier,
+    ];
+    if (reason) {
+      bodyLines.push('', 'Additional details:', reason);
+    }
+
+    const mailto = 'mailto:dev.bitztech@gmail.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+    window.location.href = mailto;
+  });
+</script>
+
+</body>
+</html>
